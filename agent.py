@@ -110,7 +110,7 @@ class Agent():
 		preds = self.model.predict(inputToModel)
 		value_array = preds[0]
 		logits_array = preds[1]
-		value = value_array[0]
+		value = value_array[0][0]
 
 		logits = logits_array[0]
 
